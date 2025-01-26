@@ -52,6 +52,7 @@ def make_payment(total_price):
                 print("Insufficient payment. Please insert more money.")
         except ValueError:
             print("Invalid input. Please enter a valid amount.")
+        return payment - total_price
 
 # Print a recipient for the purchase
 def print_receipt(selected_items, total_price, payment, change):
